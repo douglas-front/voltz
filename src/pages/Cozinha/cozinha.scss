@@ -1,0 +1,342 @@
+@import '../../variables';
+.items-cozinha{
+  position: relative;
+  height: 400px;
+  overflow: initial;
+  h1{
+    overflow: initial;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+    font-size: 200px;
+    text-transform: uppercase;
+
+    color: rgb(0 0 0 / 0.3);
+  }
+
+  .content-items-cozinha{
+    // background-color: red;
+    overflow: initial;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2 , 120px);
+    justify-content: center;
+    align-items: center;
+    .card{
+      margin-top: 110%;
+      width: 250px;
+      height: 100px;
+      // background-color: red;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.4);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      button{
+        cursor: pointer;
+        position: relative;
+        padding: 10px 20px;
+        border: 1px solid $color-2;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: all .5s;
+        // background-color: blue;
+        &:hover{
+          background-color: $color-2;
+          color: #fff;
+        }
+      }
+
+      img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+  }
+
+}
+.results-cozinha{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  button{
+    cursor: pointer;
+    position: relative;
+    padding: 20px 20px;
+    border: 1px solid $color-2;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all .5s;
+    // background-color: blue;
+    &:hover{
+      background-color: $color-2;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .items-cozinha{
+    position: relative;
+    height: 100%;
+    h1{
+      position: absolute;
+      top: -13%;
+      // left: 50%;
+      // transform: translate(50% , -50%);
+      width: 100%;
+      // height: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      
+      font-size: 100px;
+      text-transform: uppercase;
+  
+      color: rgb(0 0 0 / 0.3);
+    }
+  
+    .content-items-cozinha{
+      margin-top: 0%;
+      height: 50%;
+      display: grid;
+      grid-template-columns:  250px;
+      grid-template-rows: repeat(5, 140px);
+      justify-content: center;
+      align-items: center;
+      // background-color: red;
+      .card{
+     
+        width: 250px;
+        height: 120px;
+        // background-color: red;
+        border-radius: 10px;
+        border: 1px solid $color-2;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 0.4);
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+  
+        button{
+          cursor: pointer;
+          position: relative;
+          padding: 10px 20px;
+          border: 1px solid $color-2;
+          background-color: transparent;
+          border-radius: 10px;
+          transition: all .5s;
+          // background-color: blue;
+          &:hover{
+            background-color: $color-2;
+            color: #fff;
+          }
+        }
+  
+        img{
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+      }
+    }
+  
+  }
+  .results-cozinha{
+    // background-color: red;
+    margin-top: 0%;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+    button{
+      cursor: pointer;
+      position: relative;
+      padding: 20px 20px;
+      border: 1px solid $color-2;
+      background-color: transparent;
+      border-radius: 10px;
+      transition: all .5s;
+      // background-color: blue;
+      &:hover{
+        background-color: $color-2;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1140px) {
+  .items-cozinha{
+    position: relative;
+    height: 100%;
+    h1{
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      // height: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      
+      font-size: 170px;
+      text-transform: uppercase;
+  
+      color: rgb(0 0 0 / 0.3);
+    }
+  
+    .content-items-cozinha{
+      margin-top: 0%;
+      height: 100%;
+      display: grid;
+      grid-template-columns:  330px;
+      grid-template-rows: repeat(5, 140px);
+      justify-content: center;
+      align-items: center;
+      .card{
+     
+        width: 350px;
+        height: 120px;
+        // background-color: red;
+        border-radius: 10px;
+        border: 1px solid $color-2;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 0.4);
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+  
+        button{
+          cursor: pointer;
+          position: relative;
+          padding: 10px 20px;
+          border: 1px solid $color-2;
+          background-color: transparent;
+          border-radius: 10px;
+          transition: all .5s;
+          // background-color: blue;
+          &:hover{
+            background-color: $color-2;
+            color: #fff;
+          }
+        }
+  
+        img{
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+      }
+    }
+  
+  }
+  .results-cozinha{
+    margin-top: 5%;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+    button{
+      cursor: pointer;
+      position: relative;
+      padding: 20px 20px;
+      border: 1px solid $color-2;
+      background-color: transparent;
+      border-radius: 10px;
+      transition: all .5s;
+      // background-color: blue;
+      &:hover{
+        background-color: $color-2;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1141px) and (max-width: 1250px) {
+  .items-cozinha{
+    position: relative;
+    height: 400px;
+    h1{
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      
+      font-size: 200px;
+      text-transform: uppercase;
+  
+      color: rgb(0 0 0 / 0.3);
+    }
+  
+    .content-items-cozinha{
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 260px);
+      justify-content: center;
+      align-items: center;
+      .card{
+     
+        width: 250px;
+        height: 100px;
+        // background-color: red;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 0.4);
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+  
+        button{
+          cursor: pointer;
+          position: relative;
+          padding: 10px 20px;
+          border: 1px solid $color-2;
+          background-color: transparent;
+          border-radius: 10px;
+          transition: all .5s;
+          // background-color: blue;
+          &:hover{
+            background-color: $color-2;
+            color: #fff;
+          }
+        }
+  
+        img{
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+      }
+    }
+  
+  }
+}

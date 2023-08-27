@@ -1,0 +1,43 @@
+@import '../../variables';
+footer{
+  background-color: $color-1;
+
+  .content-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    :first-child{
+      color: $color-2;
+      text-transform: uppercase;
+    }
+    :nth-child(2){
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  footer{
+    margin-top: 20%;
+      background-color: $color-1;
+    
+      .content-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        :first-child{
+          font-size: 50px;
+          color: $color-2;
+          text-transform: uppercase;
+        }
+        :nth-child(2){
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+  }
+}

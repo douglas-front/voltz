@@ -1,0 +1,60 @@
+@import '../../variables';
+nav {
+    background-color: #000;
+    padding-block: 20px;
+
+
+    .content-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1 {
+            color: #fff;
+        }
+
+        a {
+            cursor: pointer;
+
+            button{
+                padding: 10px 50px;
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid $color-2;
+
+                position: relative;
+
+                z-index: 1000;
+
+                &::before{
+                    content: '';
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0%;
+
+                    background-color: $color-2;
+                    transition: all .3s;
+
+                    cursor: pointer;
+
+                    z-index: -1;
+
+                    
+
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav{
+        border-radius: 0 0 40px 40px;
+    }
+}

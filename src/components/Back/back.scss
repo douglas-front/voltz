@@ -1,0 +1,18 @@
+.back{
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+
+  font-size: 20px;
+
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  transition: all .3s;
+
+  &:hover{
+    background-color: black;
+    color: #fff;
+  }
+}
